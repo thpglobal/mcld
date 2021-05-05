@@ -9,9 +9,7 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="A Hunger Project Website">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Unna|Source+Sans+Pro">
-
+	<meta name="description" content="Movement for Community-led Development">
 	<?php wp_head(); ?>
 </head>
 
@@ -33,11 +31,6 @@
 	<nav class="main-navigation">
 		<?php wp_nav_menu( array('theme_location' => 'menu-1') ); ?>
 	</nav>
-	<a href="/give-now">
-	<svg class="vanish" height="125" width="125">
-	<g><rect x="0" y="0" width="125" height="125" fill="#0000aa"></rect>
-	<text x=60 y="65" dominant-baseline="middle" text-anchor="middle" font-family="Unna" font-size="20" font-weight="bold" fill="white">Give Now</text>
-	</g></svg></a>
 
 	<a id="hamburger" 
 			href="javascript:thpmobile();"><span class="dashicons dashicons-menu-alt3"></span>&nbsp;</a>
