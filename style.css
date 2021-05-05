@@ -1,12 +1,12 @@
 /*!
-Theme Name: thptheme
-Theme URI: https://github.com/thpglobal/thptheme
+Theme Name: mcld
+Theme URI: https://github.com/thpglobal/mcld
 Author: John Coonrod
 Author URI: https://thp.org
 Description: Try to match 
-Version: 1.1.0
+Version: 0.1
 License: GNU General Public License v2 or later
-Text Domain: thptheme
+Text Domain: mcld
 */
 
 /* Text meant only for screen readers. */
@@ -60,7 +60,7 @@ blockquote {
 	text-transform:uppercase;
 	font-weight:bold;
 	font-size:20px;
-	font-family:"Source Sans Pro";
+	font-family:sans-serif;
 	background-color:inherit;
 	color:white;
 	border: 3px solid white;
@@ -91,7 +91,7 @@ body {
 	margin: 0;
 	color: #000;
 	background: #fff;
-	font-family: 'Source Sans Pro',sans-serif;
+	font-family: sans-serif;
 }
 
 p, li { 
@@ -103,7 +103,6 @@ a { text-decoration: none; }
 
 
 h1, h2, blockquote {
-	font-family: 'Unna', serif;
 	font-weight: normal;
 	color: #0000aa;
 }
@@ -203,7 +202,7 @@ h2 {
 }
 
 .entry { margin-bottom: 35px; }
-.actionbar {width:100%; font-family:Unna; background-color:#0000aa; color:white; font-size: 30px; padding:30px; text-align:center;}
+.actionbar {width:100%; background-color:#0000aa; color:white; font-size: 30px; padding:30px; text-align:center;}
 
 
 .footer1 {padding-right:30px;}
