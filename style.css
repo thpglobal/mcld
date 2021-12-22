@@ -112,7 +112,7 @@ h2 {
 	top:0;
 	background-color:white;
 	margin: 0 auto;
-	padding: 0;
+	padding: 2em;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -122,8 +122,8 @@ h2 {
 }
 
 .site-title {
-	margin: 0;
 	font-size: 1.4rem;
+	max-width:20rem;
 }
 
 .main-navigation .menu {
@@ -143,7 +143,6 @@ h2 {
 
 .main-navigation .menu a {
 	display: block;
-	color: #666;
 	padding: 10px;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -178,7 +177,7 @@ h2 {
 
 
 .entry { margin-bottom: 35px; }
-.actionbar {width:100%; background-color:var(--secondary); color:white; font-size: 30px; padding:30px; text-align:center;}
+.actionbar {width:100%; background-color:var(--secondary); color:white; font-size: 2rem; padding:2rem; text-align:center;}
 
 
-footer {background-color:var(--shaded);}
+footer {background-color:var(--shaded); padding:2em;}
