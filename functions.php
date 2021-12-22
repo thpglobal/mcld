@@ -35,44 +35,6 @@ function add_search_form($items, $args) {
 }
 add_filter('wp_nav_menu_items', 'add_search_form', 10, 2);
 
-
-/* custom colors
-*/
-function wpdc_add_custom_gutenberg_color_palette() {
-	add_theme_support(
-		'editor-color-palette',
-		[
-			[
-				'name'  => esc_html__( 'Cobalt', 'wpdc' ),
-				'slug'  => 'Cobalt',
-				'color' => '#0000aa',
-			],
-			[
-				'name'  => esc_html__( 'Aqua', 'wpdc' ),
-				'slug'  => 'Aqua',
-				'color' => '#00bfba',
-			],
-			[
-				'name'  => esc_html__( 'Salmon', 'wpdc' ),
-				'slug'  => 'Salmon',
-				'color' => '#ffff66',
-			],
-			[
-				'name'  => esc_html__( 'Yellow', 'wpdc' ),
-				'slug'  => 'Yellow',
-				'color' => '#ffca05',
-			],
-			[
-				'name'  => esc_html__( 'White', 'wpdc' ),
-				'slug'  => 'White',
-				'color' => '#ffffff',
-			],
-		]
-	);
-}
-add_action( 'after_setup_theme', 'wpdc_add_custom_gutenberg_color_palette' );
-
-
 function register_widget_areas() {
 	register_sidebar( array(
     'name'          => 'Call to Action Bar',
@@ -86,44 +48,16 @@ function register_widget_areas() {
 
 
   register_sidebar( array(
-    'name'          => 'Footer area one',
-    'id'            => 'footer_area_one',
-    'description'   => 'This widget area discription',
-    'before_widget' => '<section class="footer-area footer-area-one">',
+    'name'          => 'Footer area',
+    'id'            => 'footer_area',
+    'description'   => 'New block ready footer',
+    'before_widget' => '<section>',
     'after_widget'  => '</section>',
-    'before_title'  => '<h4>',
-    'after_title'   => '</h4>',
+    'before_title'  => '<span>',
+    'after_title'   => '</span>',
   ));
 
   register_sidebar( array(
-    'name'          => 'Footer area two',
-    'id'            => 'footer_area_two',
-    'description'   => 'This widget area discription',
-    'before_widget' => '<section class="footer-area footer-area-two">',
-    'after_widget'  => '</section>',
-    'before_title'  => '<h4>',
-    'after_title'   => '</h4>',
-  ));
-
-  register_sidebar( array(
-    'name'          => 'Footer area three',
-    'id'            => 'footer_area_three',
-    'description'   => 'This widget area discription',
-    'before_widget' => '<section class="footer-area footer-area-three">',
-    'after_widget'  => '</section>',
-    'before_title'  => '<h4>',
-    'after_title'   => '</h4>',
-  ));
-register_sidebar( array(
-    'name'          => 'Footer area four',
-    'id'            => 'footer_area_four',
-    'description'   => 'Page-width footer for validation stickers',
-    'before_widget' => '<section class="footer-area footer-area-four">',
-    'after_widget'  => '</section>',
-    'before_title'  => '<h4>',
-    'after_title'   => '</h4>',
-  ));
-	register_sidebar( array(
 		'name'          => 'Sidebar',
 		'id'            => 'sidebar-1',
 		'description'   => 'Add widgets',
