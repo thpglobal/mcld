@@ -26,7 +26,7 @@
 <a class="screen-reader-text" href="#content">Skip to content</a>
 
 <header class="site-header">
-	<?php the_custom_logo();?>
+	<?php the_custom_logo(); echo get_bloginfo('name'); ?>
 
 	<nav class="main-navigation">
 		<?php wp_nav_menu( array('theme_location' => 'menu-1') ); ?>
@@ -38,6 +38,3 @@
 		<div id='thp-search' style='text-align:center;display:none;'>
 			<?php get_search_form();?>
 		</div>
-
-<div id="content" class="site-content">
-	

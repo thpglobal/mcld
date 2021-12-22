@@ -4,7 +4,6 @@
  * Now that blocks can go into widgets, no reason to have multiple footer areas
  */
 ?>
-</div> <!-- close the page container -->
 
 <footer>
 	<?php dynamic_sidebar( 'footer_area' ); ?>
