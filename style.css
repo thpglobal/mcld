@@ -39,8 +39,8 @@ article > h3, h4{ color: var(--secondary); font-weight:bold;}
 
 footer {padding:2em; background-color:var(--secondary);}
 footer > p { color:white; font-size:18px;}
-footer > h2, a {font-size: 1.4rem; color:var(--gold); text-transform:capitalize;}
-
+footer > h3 {font-size: 1.4rem; color:var(--gold); text-transform:capitalize;}
+footer > a { color:var(--gold);}
 
 .site-title {
 	grid-area:site-name;
