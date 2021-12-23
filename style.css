@@ -4,7 +4,7 @@ Theme URI: https://github.com/thpglobal/mcld
 Author: John Coonrod
 Author URI: https://thp.org
 Description: Try to match 
-Version: 0.8
+Version: 0.8.1
 License: GNU General Public License v2 or later
 Text Domain: mcld
 */
@@ -12,23 +12,14 @@ Text Domain: mcld
 /* Text meant only for screen readers. */
 .screen-reader-text {
 	clip: rect(1px, 1px, 1px, 1px);
-	clip-path: inset(50%);
-	height: 1px;
-	width: 1px;
-	margin: -1px;
-	padding: 0;
-	border: 0;
-	overflow: hidden;
-	position: absolute !important;
-	word-wrap: normal !important;
+	clip-path: inset(50%); height: 1px; width: 1px; margin: -1px; padding: 0; border: 0;
+	overflow: hidden; position: absolute !important; word-wrap: normal !important;
 }
 
 :root {--primary:#000000; --secondary:#252b58; --gold:#ed7d31;}
 *,
 *::before,
-*::after {
-	box-sizing: border-box;
-}
+*::after { box-sizing: border-box; }
 
 body {
 	-webkit-font-smoothing: antialiased;
@@ -43,11 +34,11 @@ a { text-decoration: none; }
 h1, h2, blockquote { font-weight: normal;}
 h1 {margin-top: 0;font-size: 2rem;}
 article {padding:2em; font-size:18px;}
-article > h2 {font-size: 1.4rem;}
+article > h2 {font-size: 1.4rem; color:var(--primary);}
 article > h3, h4{ color: var(--secondary); font-weight:bold;}
 
 footer {padding:2em; background-color:var(--secondary); color:white; font-size:18px;}
-footer > h2 {color:var(--gold); text-transform:capitalize;}
+footer > h2, a {color:var(--gold); text-transform:capitalize;}
 
 
 .site-title {
@@ -56,7 +47,7 @@ footer > h2 {color:var(--gold); text-transform:capitalize;}
 }
 
 .main-navigation {
-	grid-area:menu;
+	grid-area:menu; width:100%; display:flex; justify-content:space-between; list-style:none;
 }
 .site-logo { grid-area: logo;}
 .site-header {
