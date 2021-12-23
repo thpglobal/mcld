@@ -4,7 +4,7 @@ Theme URI: https://github.com/thpglobal/mcld
 Author: John Coonrod
 Author URI: https://thp.org
 Description: Try to match 
-Version: 0.8.1
+Version: 0.8.2
 License: GNU General Public License v2 or later
 Text Domain: mcld
 */
@@ -30,15 +30,16 @@ body {
 }
 
 a { text-decoration: none; }
-
 h1, h2, blockquote { font-weight: normal;}
 h1 {margin-top: 0;font-size: 2rem;}
 article {padding:2em; font-size:18px;}
+article > a {color:var(--primary);}
 article > h2 {font-size: 1.4rem; color:var(--primary);}
 article > h3, h4{ color: var(--secondary); font-weight:bold;}
 
-footer {padding:2em; background-color:var(--secondary); color:white; font-size:18px;}
-footer > h2, a {color:var(--gold); text-transform:capitalize;}
+footer {padding:2em; background-color:var(--secondary);}
+footer > p { color:white; font-size:18px;}
+footer > h2, a {font-size: 1.4rem; color:var(--gold); text-transform:capitalize;}
 
 
 .site-title {
@@ -47,7 +48,7 @@ footer > h2, a {color:var(--gold); text-transform:capitalize;}
 }
 
 .main-navigation {
-	grid-area:menu; width:100%; display:flex; justify-content:space-between; list-style:none;
+	grid-area:menu; width:100%; display:flex; justify-content:space-between; list-style: none;
 }
 .site-logo { grid-area: logo;}
 .site-header {
