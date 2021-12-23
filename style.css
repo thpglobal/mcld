@@ -4,7 +4,7 @@ Theme URI: https://github.com/thpglobal/mcld
 Author: John Coonrod
 Author URI: https://thp.org
 Description: Try to match 
-Version: 0.5
+Version: 0.6
 License: GNU General Public License v2 or later
 Text Domain: mcld
 */
@@ -23,7 +23,7 @@ Text Domain: mcld
 	word-wrap: normal !important;
 }
 
-:root {--primary:#000000; --secondary:#005500; --shaded:lightblue;}
+:root {--primary:#000000; --secondary:#252b58; --gold:#ed7d31;}
 *,
 *::before,
 *::after {
@@ -36,7 +36,9 @@ blockquote {
     padding-left: 20px;
 	color: var(--secondary);
 }
-article {padding:2em;}
+article {padding:2em; font-size:18px;}
+footer {padding:2em; background-color:var(--secondary); color:white; font-size:18px;}
+footer > h2 {color:var(--gold); text-transform:capitalize;}
 
 .wp-block-button .wp-block-button__link{
 	display: inline-block;
@@ -79,7 +81,6 @@ body {
 	background: #fff;
 	font-family: sans-serif;
 }
-article {padding:2rem;}
 
 a { text-decoration: none; }
 
@@ -100,13 +101,13 @@ h3, h4{ color: var(--secondary); font-weight:bold;}
 	align-items: center;
 	justify-content: space-between;
 	border-bottom: 0;
-	margin-bottom: 1rem;
+	margin-bottom: 0;
 	z-index:100;
 }
 
 .site-title {
 	font-size: 2rem;
-	max-width:25rem;
+	max-width:50vw;
 }
 
 .main-navigation .menu {
@@ -130,6 +131,8 @@ h3, h4{ color: var(--secondary); font-weight:bold;}
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: 600;
+	color:#262626;
+	font-size:16px;
 }
 
 /* dropdowns */
@@ -140,12 +143,11 @@ h3, h4{ color: var(--secondary); font-weight:bold;}
     display: none;
     position: absolute;
     top: 2em;
-	border-top: 2px solid var(--secondary);
+	border-top: 2px solid var(--primary);
 	padding-top: 1em;
-    list-style-type:none;
+	width: 300px;
+    list-style-type: none;
     left: 0;
-    z-index: 99999;
-    width: 200px;
     background: #fff;
     box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
 }
@@ -162,4 +164,3 @@ h3, h4{ color: var(--secondary); font-weight:bold;}
 .actionbar {width:100%; background-color:var(--secondary); color:white; font-size: 2rem; padding:2rem; text-align:center;}
 
 
-footer {background-color:var(--shaded); padding:2em;}
