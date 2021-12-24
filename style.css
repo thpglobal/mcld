@@ -4,7 +4,7 @@ Theme URI: https://github.com/thpglobal/mcld
 Author: John Coonrod
 Author URI: https://thp.org
 Description: Try to match 
-Version: 0.8.4
+Version: 0.8.7
 License: GNU General Public License v2 or later
 Text Domain: mcld
 */
@@ -19,20 +19,12 @@ Text Domain: mcld
 :root {--primary:#000000; --secondary:#252b58; --gold:#ed7d31;}
 *,
 *::before,
-*::after { box-sizing: border-box; }
-
-body {
-	-webkit-font-smoothing: antialiased;
-	margin: 0;
-	color: #000;
-	background: #fff;
-	font-family: sans-serif;
-}
+*::after { box-sizing: border-box; font-family: sans-serif;}
 
 a { text-decoration: none; }
 h1, h2, blockquote { font-weight: normal;}
 h1 {margin-top: 0;font-size: 2rem;}
-article {padding:2em; font-size:18px;}
+article {padding:2em; font-size:18px; color:var(--primary);}
 article ~ a {color:var(--primary);}
 article ~ h2 {font-size: 1.4rem; color:var(--primary);}
 article ~ h3, h4{ color: var(--secondary); font-weight:bold;}
@@ -48,7 +40,7 @@ footer ~ a { color:var(--gold);}
 }
 
 .main-navigation {
-	grid-area:menu; width:100%; display:flex; justify-content:space-between; list-style: none;
+	grid-area:menu; width:100%; display:flex;
 }
 .site-logo { grid-area: logo;}
 .site-header {
@@ -69,19 +61,21 @@ footer ~ a { color:var(--gold);}
 	#hamburger {display:block;}
 	.site-content {padding:1em;}
 }
-.main-navigation a {
+.main-navigation .menu { list-style: none; display: flex; }
+
+.main-navigation .menu a {
 	display: block;
 	padding: 10px;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: 600;
-	color:var(--primary);
+	color:#262626;
 	font-size:16px;
 }
 
 /* dropdowns */
 
-.main-navigation ul {padding-inline-start:0;list-style:none;}
+.main-navigation ul {padding-inline-start:0;}
 .main-navigation ul li:hover > ul {display: block;}
 .main-navigation ul ul {
     display: none;
@@ -96,7 +90,6 @@ footer ~ a { color:var(--gold);}
     box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
 }
 .main-navigation li { position: relative; }
-
 blockquote {
     margin: 20px 0 30px;
     border-left: 5px solid;
