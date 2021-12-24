@@ -34,7 +34,7 @@
 	</nav>
 
 	<a id="hamburger" 
-			href="javascript:thpmobile();"><span class="dashicons dashicons-menu-alt3"></span>&nbsp;</a>
+			href="javascript:thpmobile();"><span title=Menu><h1>&#9776;</h1></span></a>
 </header>
 		<div id='thp-search' style='text-align:center;display:none;'>
 			<?php get_search_form();?>
