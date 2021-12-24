@@ -18,9 +18,7 @@ get_header();
 
 		<?php
 		while ( have_posts() ) : the_post();
-
-			get_template_part( 'template-parts/content', 'search' );
-
+			echo "<h2>".the_title()." ".the_date()."</h2>\n";
 		endwhile;
 	
 	else: ?>
@@ -34,5 +32,4 @@ get_header();
 </main>
 
 <?php
-get_sidebar();
 get_footer();

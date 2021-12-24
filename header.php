@@ -31,6 +31,7 @@
 
 	<nav class="main-navigation">
 		<?php wp_nav_menu( array('theme_location' => 'menu-1') ); ?>
+		<span><?php get_search_form();?></span>
 	</nav>
 
 	<a id="hamburger" 

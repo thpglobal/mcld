@@ -3,8 +3,8 @@ Theme Name: mcld
 Theme URI: https://github.com/thpglobal/mcld
 Author: John Coonrod
 Author URI: https://thp.org
-Description: Try to match 
-Version: 0.8.8
+Description: Clean, professional theme 
+Version: 0.9.0
 License: GNU General Public License v2 or later
 Text Domain: mcld
 */
@@ -31,6 +31,7 @@ article ~ h2 {font-size: 1.4rem; color:var(--primary);}
 article ~ h3, h4{ color: var(--secondary); font-weight:bold;}
 
 footer {padding:2em; background-color:var(--secondary); color:white;}
+footer ~ a {color:white;}
 
 .site-title {
 	grid-area:site-name;

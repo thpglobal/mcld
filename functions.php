@@ -23,17 +23,6 @@ function remove_jquery_migrate($scripts)
 
 add_action('wp_default_scripts', 'remove_jquery_migrate');
 
-// Add search to main navigation
-function add_search_form($items, $args) {
-          if( $args->theme_location == 'menu-1' ){
-          $items = '<li class="menu-item">'
-			  . '<a href="javascript:thpsearch();">'
-			  . '<span class="dashicons dashicons-search"></span></a>'
- 			. '</li>'.$items;
-          }
-        return $items;
-}
-add_filter('wp_nav_menu_items', 'add_search_form', 10, 2);
 
 function register_widget_areas() {
 	register_sidebar( array(
@@ -125,8 +114,3 @@ function thptheme_create_post_custom_post() {
 		) 
 	));
 }
-add_action('init', 'thptheme_create_post_custom_post'); // Add our work type
-function ww_load_dashicons(){
-   wp_enqueue_style('dashicons');
-}
-add_action('wp_enqueue_scripts', 'ww_load_dashicons', 999);
