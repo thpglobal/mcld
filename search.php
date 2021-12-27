@@ -18,7 +18,13 @@ get_header();
 
 		<?php
 		while ( have_posts() ) : the_post();
-			echo "<p><a href=".the_permalink().">".the_title()." ".the_date()."</a></p>\n";
+			echo "<p><a href=";
+			the_permalink();
+			echo "><b>";
+			the_title();
+			echo "</b></a> ";
+			the_date();
+			echo "</p>\n";
 		endwhile;
 	
 	else: ?>
