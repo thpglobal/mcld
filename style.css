@@ -3,8 +3,8 @@ Theme Name: mcld
 Theme URI: https://github.com/thpglobal/mcld
 Author: John Coonrod
 Author URI: https://thp.org
-Description: Clean, professional theme 
-Version: 0.9.0
+Description: Clean, professional theme adapted from untheme
+Version: 0.9.1
 License: GNU General Public License v2 or later
 Text Domain: mcld
 */
@@ -21,7 +21,7 @@ Text Domain: mcld
 *::before,
 *::after { box-sizing: border-box; font-family: sans-serif;}
 
-a { text-decoration: none; }
+a { text-decoration: none; color:inherit; font-weight:bold;}
 a:hover {text-decoration:underline;}
 h1, h2, blockquote { font-weight: normal;}
 h1 {margin-top: 0;font-size: 2rem;}
@@ -31,7 +31,6 @@ article ~ h2 {font-size: 1.4rem; color:var(--primary);}
 article ~ h3, h4{ color: var(--secondary); font-weight:bold;}
 
 footer {padding:2em; background-color:var(--secondary); color:white;}
-footer ~ a {color:white;}
 
 .site-title {
 	grid-area:site-name;
@@ -96,7 +95,7 @@ blockquote {
 	color: var(--secondary);
 }
 
-.entry { margin-bottom: 2rem; }
+.entry { margin-bottom: 2rem; max-width:1000px; }
 .actionbar {width:100%; background-color:var(--secondary); color:white; font-size: 2rem; padding:2rem; text-align:center;}
 
 
