@@ -31,12 +31,8 @@
 
 	<nav class="main-navigation">
 		<?php wp_nav_menu( array('theme_location' => 'menu-1') ); ?>
-		<span><?php get_search_form();?></span>
 	</nav>
 
 	<a id="hamburger" 
 			href="javascript:thpmobile();"><span title=Menu><h1>&#9776;</h1></span></a>
 </header>
-		<div id='thp-search' style='text-align:center;display:none;'>
-			<?php get_search_form();?>
-		</div>
