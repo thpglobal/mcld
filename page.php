@@ -14,13 +14,16 @@ get_header();
 <article id="post-<?php the_ID(); ?>" class="entry">
 	<header class="entry-header">
 		<?php if ( has_post_thumbnail() ) { 
-			echo("<div style='position:relative;'>\n");
-			$thpurl=get_the_post_thumbnail_url();
-			echo("<img class='fit' src='$thpurl'>");
-			echo("<h1 class='overlay-title'>");
-			the_title();
-			echo("</h1></div>\n");
-		}else{
+			$thpurl=get_the_post_thumbnail_url(); ?>
+			<div class="wp-block-cover has-custom-content is-position-bottom-left">
+				<img loading="lazy" class="wp-block-cover__image-background" alt src="<?php echo $thpurl?>" data-object-fit="cover">
+				<div class="wp-block-cover__inner-container">
+					<p class="has-text-align-center has-white-color has-text-color has-background has-large-font-size">
+						<?php the_title();?>
+					</p> 
+				</div>
+			</div>
+		<?php }else{
 			echo("<h1>"); the_title(); echo("</h1>\n");
 		} 
 		?>

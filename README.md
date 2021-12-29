@@ -3,7 +3,8 @@
 ## Adapted from the thptheme, which was adapted from untheme
 
 ## Roadmap
-* Design a homepage that is full width with a hero 
+* Design a homepage that is full width with a hero using the Cover block
+* duplicate the classes used by the Cover block for page hero images.
 
 ### Theme for THP websites starting in 2021
 
