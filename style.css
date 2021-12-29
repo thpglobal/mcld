@@ -4,7 +4,7 @@ Theme URI: https://github.com/thpglobal/mcld
 Author: John Coonrod
 Author URI: https://thp.org
 Description: Clean, professional theme adapted from untheme
-Version: 0.9.3
+Version: 0.9.4
 License: GNU General Public License v2 or later
 Text Domain: mcld
 */
@@ -29,7 +29,7 @@ article {padding:2em; font-size:18px; color:var(--primary);}
 article ~ a {color:var(--primary);}
 article ~ h2 {font-size: 1.4rem; color:var(--primary);}
 article ~ h3, h4{ color: var(--secondary); font-weight:bold;}
-
+entry-content {max-width:1000px; margin:0 auto;}
 footer {padding:2em; background-color:var(--secondary); color:white;}
 
 .site-title {
