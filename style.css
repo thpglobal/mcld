@@ -97,7 +97,6 @@ blockquote {
 }
 
 .entry { margin-bottom: 2rem;}
-.entry-content { max-width:1000px; display:flex;}
 .actionbar {width:100%; background-color:var(--secondary); color:white; font-size: 2rem; padding:2rem; text-align:center;}
 
 
@@ -111,10 +110,11 @@ blockquote {
 	background-color:white;
 	color:var(--secondary);
 }
-.wp-block-button .wp-block-button__link:hover{
+.wp-block-button .wp-block-button__link:hover .has-background{
 	background-color:var(--secondary);
 	color:white;
 }
+
 .btn1 {background-color:var(--secondary) !important; color:white !important;}
 .btn2 {
 	padding: 10px 20px;
