@@ -4,7 +4,7 @@ Theme URI: https://github.com/thpglobal/mcld
 Author: John Coonrod
 Author URI: https://thp.org
 Description: Clean, professional theme adapted from untheme
-Version: 0.9.4
+Version: 0.9.5
 License: GNU General Public License v2 or later
 Text Domain: mcld
 */
@@ -61,7 +61,7 @@ ol > li {margin-bottom:0.4em;}
 	.site-content {padding:1em;}
 }
 .main-navigation .menu { list-style: none; display: flex; }
-
+.has-shadow {text-shadow: 3px 3px #80808080;}
 .main-navigation .menu a {
 	display: block;
 	padding: 10px;
@@ -110,7 +110,7 @@ blockquote {
 	background-color:white;
 	color:var(--secondary);
 }
-.wp-block-button .wp-block-button__link:hover .has-background{
+.wp-block-button .wp-block-button__link:hover{
 	background-color:var(--secondary);
 	color:white;
 }
