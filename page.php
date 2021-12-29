@@ -18,9 +18,9 @@ get_header();
 			<div class="wp-block-cover has-custom-content is-position-bottom-left">
 				<img loading="lazy" class="wp-block-cover__image-background" alt src="<?php echo $thpurl?>" data-object-fit="cover">
 				<div class="wp-block-cover__inner-container">
-					<p class="has-text-align-center has-white-color has-text-color has-background has-large-font-size">
+					<h1 class="has-text-align-center has-white-color has-shadow">
 						<?php the_title();?>
-					</p> 
+		</h1> 
 				</div>
 			</div>
 		<?php }else{
