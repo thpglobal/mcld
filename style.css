@@ -4,7 +4,7 @@ Theme URI: https://github.com/thpglobal/mcld
 Author: John Coonrod
 Author URI: https://thp.org
 Description: Clean, professional theme adapted from untheme
-Version: 0.9.5
+Version: 0.9.6
 License: GNU General Public License v2 or later
 Text Domain: mcld
 */
@@ -29,8 +29,9 @@ article {padding:2em; font-size:18px; color:var(--primary);}
 article ~ a {color:var(--primary);}
 article ~ h2 {font-size: 1.4rem; color:var(--primary);}
 article ~ h3, h4{ color: var(--secondary); font-weight:bold;}
-.entry-content {max-width:1000px; margin:0 auto;}
+.entry {max-width:1000px; margin:0 auto 2rem;}
 footer {padding:2em; background-color:var(--secondary); color:white;}
+table, td, th {border: 1px solid var(--secondary); border-collapse: collapse;}
 
 .site-title {
 	grid-area:site-name;
@@ -40,6 +41,7 @@ footer {padding:2em; background-color:var(--secondary); color:white;}
 .main-navigation {
 	grid-area:menu; width:100%; display:flex;
 }
+.wp-block-cover {margin-bottom: 1em;}
 .site-logo { grid-area: logo;}
 .site-header {
 	position: sticky;
@@ -53,14 +55,8 @@ ol > li {margin-bottom:0.4em;}
 
 
 #hamburger {display:none;}
-
-@media screen and (max-width: 600px){
-	.main-navigation .menu {display:none;}
-	.vanish {display:none;}
-	#hamburger {display:block;}
-	.site-content {padding:1em;}
-}
 .main-navigation .menu { list-style: none; display: flex; }
+
 .has-shadow {text-shadow: 3px 3px #80808080;}
 .main-navigation .menu a {
 	display: block;
@@ -70,6 +66,14 @@ ol > li {margin-bottom:0.4em;}
 	font-weight: 600;
 	color:#262626;
 	font-size:16px;
+}
+@media screen and (max-width: 600px){
+	.main-navigation .menu {display:none;}
+	.site-title {font-size:16px;margin-top:16px;}
+	.vanish {display:none;}
+	#hamburger {display:block;}
+	.site-content {padding:1em;}
+	h1 {font-size:1.4em;}
 }
 
 /* dropdowns */
@@ -88,6 +92,7 @@ ol > li {margin-bottom:0.4em;}
     background: #fff;
     box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
 }
+.sub-menu {z-index:101;}
 .main-navigation li { position: relative; }
 blockquote {
     margin: 20px 0 30px;
@@ -96,7 +101,6 @@ blockquote {
 	color: var(--secondary);
 }
 
-.entry { margin-bottom: 2rem;}
 .actionbar {width:100%; background-color:var(--secondary); color:white; font-size: 2rem; padding:2rem; text-align:center;}
 
 
@@ -133,6 +137,5 @@ blockquote {
 }
 
 .countup {text-align:center;font-family:sans-serif; font-size:50px;}
-.fit {width:100%; max-width:100%; height:auto; object-fit:contain;}
-
-
+.fit {width:100%; max-width:100%; height:auto !important;}
+.fit > img {height:auto !important;}
