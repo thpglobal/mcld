@@ -3,13 +3,13 @@
 get_header();
 ?>
 
-<main id="main" class="site-main" role="main">
+<main id="main" class="entry" role="main">
 
 	<?php 
 	if ( have_posts() ) : ?>
 
 		<header class="page-header">
-			<h1>Search Results: <?php search_query(); ?></h1>
+			<h1>Search Results: <?php echo get_search_query(); ?></h1>
 		</header>
 
 		<?php
