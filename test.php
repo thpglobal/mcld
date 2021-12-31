@@ -1,7 +1,7 @@
 <?php // test the theme without wordpress!
 // first - some fake functions!
 function the_title(){ echo "Hello World!";}
-function wp_head(){ echo "<link rel=stylesheet href=style.css>\n";}
+function wp_head(){ echo "<link rel=stylesheet href='style.css'>\n";}
 function the_content(){ echo "<p>Lorem Ipsum etc.</p>\n";}
 function the_post() {return true;}
 $nposts=1;
@@ -20,7 +20,7 @@ function language_attributes(){echo("lang=en");}
 function get_header(){include("header.php");}
 function get_footer(){include("footer.php");}
 function bloginfo($x='charset') {
-    $options=['charset'=>'utf8'];
+    $options=['charset'=>'utf8','name',"Movement for Community-led Development"];
     echo $options[$x];
 }
-require_once("page.php");
+require_once("front-page.php");

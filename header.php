@@ -1,9 +1,4 @@
-<?php
-/**
- * The header for the theme
- */
-
-?>
+<?php // The header for the MCLD theme ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -27,7 +22,7 @@
 
 <header class="site-header">
 	<div class=site-logo><?php the_custom_logo();?></div>
-	<div class=site-title><?php echo get_bloginfo('name'); ?></div>
+	<div class=site-title><a href="/"><?php bloginfo('name'); ?></a></div>
 
 	<nav class="main-navigation">
 		<?php wp_nav_menu( array('theme_location' => 'menu-1') ); ?>
