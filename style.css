@@ -32,6 +32,7 @@ article ~ h3, h4{ color: var(--secondary); font-weight:bold;}
 .entry {max-width:1000px; margin:0 auto 2rem;}
 footer {padding:2em; background-color:var(--secondary); color:white;}
 table, td, th {border: 1px solid var(--secondary); border-collapse: collapse;}
+img {width:100%; height:auto; display:block;}
 
 .site-title {
 	grid-area:site-name;
@@ -137,5 +138,3 @@ blockquote {
 }
 
 .countup {text-align:center;font-family:sans-serif; font-size:50px;}
-.fit {width:100%; max-width:100%; height:auto !important;}
-.fit > img {height:auto !important;}
