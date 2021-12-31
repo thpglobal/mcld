@@ -1,7 +1,5 @@
-<?php // Special full-widt Page Template
-get_header();
-?>
-
+<?php /* Template name: Full Width */ ?>
+<?php get_header();?>
 <main>
     <article>
 		<?php the_content(); ?>
