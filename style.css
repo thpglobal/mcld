@@ -4,7 +4,7 @@ Theme URI: https://github.com/thpglobal/mcld
 Author: John Coonrod
 Author URI: https://thp.org
 Description: Clean, professional theme adapted from untheme
-Version: 0.1.0
+Version: 0.1.1
 License: GNU General Public License v2 or later
 Text Domain: mcld
 */
@@ -16,14 +16,36 @@ Text Domain: mcld
 	overflow: hidden; position: absolute !important; word-wrap: normal !important;
 }
 
-:root {--primary:#000000; --secondary:#252b58; --gold:#ed7d31;}
+:root {--primary:#000000; --secondary:#252b58;
+	--orange: #EC7124;
+	--red: #941B13;
+	--blue:#252B5B;
+	--green:#67B52E;
+	--gold:#E8A904;
+}
 *,
 *::before,
 *::after { box-sizing: border-box; font-family: sans-serif;}
 
+/* testing the squares */
+.sq-red {width:100%;border:1px solid var(--red); box-shadow: 10px 10px var(--red);}
+.sq-red::after {display: block; padding-bottom: 100%;}
+.sq-blue {width:100%;border:1px solid var(--blue); box-shadow: 10px 10px var(--blue);}
+.sq-blue::after {display: block; padding-bottom: 100%;}
+.sq-green {width:100%;border:1px solid var(--green); box-shadow: 10px 10px var(--green);}
+.sq-green::after {display: block; padding-bottom: 100%;}
+.sq-gold {width:100%;border:1px solid var(--gold); box-shadow: 10px 10px var(--gold);}
+.sq-gold::after {display: block; padding-bottom: 100%;}
+.sq-orange {width:100%;border:1px solid var(--orange); box-shadow: 10px 10px var(--orange);}
+.sq-orange::after {display: block; padding-bottom: 100%;}
+
+table.six {width:100%; height:430px; }
+table.six > tr, td {border:3px solid white;text-align:center; vertical-align:middle;background-color:var(--blue);color:white; width:50%}
+
+
 a { text-decoration: none; color:inherit; font-weight:bold;}
 a:hover {text-decoration:underline;}
-h1, h2, blockquote { font-weight: normal;}
+h1, h2, blockquote { font-weight: normal; color:inherit}
 h1 {margin-top: 0;font-size: 2rem;}
 article {padding:2em; font-size:18px; color:var(--primary);}
 article ~ a {color:var(--primary);}
@@ -33,6 +55,7 @@ article ~ h3, h4{ color: var(--secondary); font-weight:bold;}
 footer {padding:2em; background-color:var(--secondary); color:white;}
 table, td, th {border: 1px solid var(--secondary); border-collapse: collapse;}
 img {width:100%; height:auto; display:block;}
+a.goog-logo-link > img {width:35px !important;}
 
 .site-title {
 	grid-area:site-name;
