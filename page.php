@@ -15,10 +15,10 @@ get_header();
 	<header class="entry-header">
 		<?php if ( has_post_thumbnail() ) { 
 			$thpurl=get_the_post_thumbnail_url(); ?>
-			<div class="wp-block-cover has-custom-content is-position-bottom-left">
+			<div class="wp-block-cover has-custom-content has-custom-content-position is-position-bottom-left">
 				<img loading="lazy" class="wp-block-cover__image-background" alt src="<?php echo $thpurl?>" data-object-fit="cover">
-				<div class="wp-block-cover__inner-container">
-					<h1 class="has-text-align-center has-white-color has-shadow">
+				<div class="wp-block-cover__inner-container is-position-bottom-left">
+					<h1 class="has-text-align-center has-white-color has-background has-shadow">
 						<?php the_title();?>
 		</h1> 
 				</div>
