@@ -23,6 +23,47 @@ function remove_jquery_migrate($scripts)
 
 add_action('wp_default_scripts', 'remove_jquery_migrate');
 
+/* custom colors
+*/
+function wpdc_add_custom_gutenberg_color_palette() {
+	add_theme_support(
+		'editor-color-palette',
+		[
+			[
+				'name'  => esc_html__( 'Blue', 'wpdc' ),
+				'slug'  => 'Blue',
+				'color' => '#252B5B',
+			],
+			[
+				'name'  => esc_html__( 'Red', 'wpdc' ),
+				'slug'  => 'Red',
+				'color' => '#941B13',
+			],
+			[
+				'name'  => esc_html__( 'Gold', 'wpdc' ),
+				'slug'  => 'Gold',
+				'color' => '#E8A904',
+			],
+			[
+				'name'  => esc_html__( 'Orange', 'wpdc' ),
+				'slug'  => 'Orange',
+				'color' => '#EC7124',
+			],
+			[
+				'name'  => esc_html__( 'Green', 'wpdc' ),
+				'slug'  => 'Green',
+				'color' => '#67B52E',
+			],
+			[
+				'name'  => esc_html__( 'White', 'wpdc' ),
+				'slug'  => 'White',
+				'color' => '#ffffff',
+			],
+		]
+	);
+}
+add_action( 'after_setup_theme', 'wpdc_add_custom_gutenberg_color_palette' );
+
 
 function register_widget_areas() {
 	register_sidebar( array(
